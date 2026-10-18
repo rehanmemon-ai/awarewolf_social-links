@@ -28,7 +28,9 @@ header{display:flex;flex-direction:column;align-items:center;gap:10px;text-align
 .thesis{font-family:var(--display);font-size:22px;line-height:1.15;text-transform:lowercase;margin:6px 0 0;text-wrap:balance}
 .pillars{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--bone-dim);margin:0}
 .knot{display:block;width:120px;height:28px;margin:0 auto}
-nav{display:flex;flex-direction:column;gap:12px}
+nav{display:flex;flex-direction:column;gap:28px}
+.group{display:flex;flex-direction:column;gap:12px}
+.group h2{font-family:var(--body);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim);margin:0 0 2px 4px}
 a.row{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--night-2);color:var(--bone);text-decoration:none;transition:border-color .2s,transform .2s}
 a.row:hover{border-color:var(--agni);transform:translateY(-1px)}
 a.row:focus-visible{outline:2px solid var(--quantum);outline-offset:3px}
@@ -63,7 +65,9 @@ a.row:focus-visible{outline:2px solid var(--quantum);outline-offset:3px}
     <line x1="60" y1="3" x2="60" y2="25" stroke="#4FCAD7" stroke-width="1"/>
   </svg>
 
-  <nav aria-label="AwareWolf channels">
+  <nav aria-label="AwareWolf links">
+   <section class="group" aria-labelledby="g-soc">
+    <h2 id="g-soc">Socials</h2>
     <a class="row" href="https://www.instagram.com/aware._wolf_/reels/" target="_blank" rel="noopener">
       <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.2.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.8a1.4 1.4 0 100 2.9 1.4 1.4 0 000-2.9z"/></svg></span>
       <span class="txt"><span class="plat">Instagram</span><span class="sub">reels · @aware._wolf_</span></span>
@@ -79,6 +83,15 @@ a.row:focus-visible{outline:2px solid var(--quantum);outline-offset:3px}
       <span class="txt"><span class="plat">TikTok</span><span class="sub">@aware._wolf</span></span>
       <span class="arr" aria-hidden="true">→</span>
     </a>
+   </section>
+   <section class="group" aria-labelledby="g-pro">
+    <h2 id="g-pro">Professional</h2>
+    <a class="row" href="https://www.linkedin.com/in/ritwik-chakradhar-047a53ba" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></span>
+      <span class="txt"><span class="plat">LinkedIn</span><span class="sub">Ritwik Chakradhar</span></span>
+      <span class="arr" aria-hidden="true">→</span>
+    </a>
+   </section>
   </nav>
 
   <section class="cta">
